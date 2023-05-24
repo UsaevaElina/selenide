@@ -47,7 +47,7 @@ public class TestsForCard {
 
     @Test
     void ShouldPositiveTestoLongNameSurnameSity() {
-        String date = setLocalDate(4);
+        String date = setLocalDate(365);
         open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Петропавловск-Камчатский");
         $("[data-test-id=date] input").doubleClick().sendKeys(date);
